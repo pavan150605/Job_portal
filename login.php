@@ -2,7 +2,7 @@
 session_start(); // Start the session
 
 // Include database connection
-$conn = new mysqli('localhost','root', '', 'job_portal');
+$db_handle = pg_connect("host=dpg-cnb35cdjm4es738bno8g-a.oregon-postgres.render.com dbname=postgres_taskmate_1wam user=postgres_taskmate_1wam_user password=qcx6iSdIRTJbZ2L4n9nmLAJfb3XYMCQp");
 
 // Check connection
 if ($conn->connect_error) {
